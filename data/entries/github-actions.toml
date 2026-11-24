@@ -1,0 +1,10 @@
+name = "GitHub Actions"
+quadrant = "infra"
+maker = "GitHub"
+url = "https://github.com/features/actions"
+summary = "GitHub's service that runs automatic checks every time a change goes into your code."
+
+[[evidence]]
+url = "https://github.com/features/actions"
+checked_on = 2026-10-12
+claim = "GitHub's product page for Actions, its CI/CD and automation service."

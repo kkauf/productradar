@@ -1,0 +1,3 @@
+name = "Scheduled agent runs"
+quadrant = "practices"
+summary = "Agents run on a schedule and work through your inbox and task board. They fix what they can. You get only the decisions."

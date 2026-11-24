@@ -1,0 +1,8 @@
+name = "Cross-model review"
+quadrant = "practices"
+summary = "Having a second AI model, which has not seen the earlier work, review a change before it ships."
+
+[[evidence]]
+url = "https://code.claude.com/docs/en/sub-agents"
+checked_on = 2026-10-12
+claim = "Claude Code documents subagents that run with their own context and model."

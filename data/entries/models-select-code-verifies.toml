@@ -1,0 +1,8 @@
+name = "Models select, code verifies"
+quadrant = "practices"
+summary = "Letting a model choose from source material while code checks the choice against the source."
+
+[[evidence]]
+url = "https://isaiconsciousyet.com"
+checked_on = 2026-10-12
+claim = "The site quotes named people's readings word for word."

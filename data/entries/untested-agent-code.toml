@@ -1,0 +1,3 @@
+name = "Shipping untested agent code"
+quadrant = "practices"
+summary = "Shipping code that an agent wrote without tests that check it."

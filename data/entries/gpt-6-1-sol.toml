@@ -1,0 +1,15 @@
+name = "GPT-6.1 Sol"
+quadrant = "models"
+maker = "OpenAI"
+url = "https://openai.com/index/introducing-gpt-6-1-sol/"
+summary = "OpenAI's lower-cost model for coding agents and office work, in Codex and the API."
+
+[[evidence]]
+url = "https://openai.com/index/introducing-gpt-6-1-sol/"
+checked_on = 2026-10-12
+claim = "OpenAI launched GPT-6.1 Sol on 2026-09-29 in Codex and in the API as gpt-6.1-sol."
+
+[[evidence]]
+url = "https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday"
+checked_on = 2026-10-12
+claim = "GPT-6.1 Sol costs $2 per million input tokens and $10 per million output tokens."

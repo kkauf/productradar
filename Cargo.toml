@@ -1,0 +1,17 @@
+[package]
+name = "radar"
+version = "0.1.0"
+edition = "2024"
+description = "Static site generator and validator for productradar.org"
+publish = false
+
+[dependencies]
+resvg = { version = "0.48.1", default-features = false, features = ["text"] }
+serde = { version = "1.0.229", features = ["derive"] }
+toml = "1.1.6"
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[profile.release]
+codegen-units = 4

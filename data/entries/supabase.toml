@@ -1,0 +1,10 @@
+name = "Supabase"
+quadrant = "infra"
+maker = "Supabase"
+url = "https://supabase.com"
+summary = "A hosted database with logins and file storage built in."
+
+[[evidence]]
+url = "https://supabase.com"
+checked_on = 2026-10-12
+claim = "Supabase describes itself as the Postgres development platform."

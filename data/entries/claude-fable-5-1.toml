@@ -1,0 +1,15 @@
+name = "Claude Fable 5.1"
+quadrant = "models"
+maker = "Anthropic"
+url = "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+summary = "Anthropic's Claude model for hard reasoning and long, multi-step agent tasks."
+
+[[evidence]]
+url = "https://platform.claude.com/docs/en/about-claude/models/overview"
+checked_on = 2026-10-12
+claim = "Anthropic lists Claude Fable 5.1 (claude-fable-5-1) as a current model for demanding reasoning and long-horizon agentic work."
+
+[[evidence]]
+url = "https://www.anthropic.com/claude/fable"
+checked_on = 2026-10-12
+claim = "Anthropic describes Fable as its next generation of intelligence for the hardest knowledge work and coding problems."

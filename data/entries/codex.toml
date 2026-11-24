@@ -1,0 +1,10 @@
+name = "Codex"
+quadrant = "tools"
+maker = "OpenAI"
+url = "https://developers.openai.com/codex"
+summary = "OpenAI's coding agent, available as a terminal CLI and inside ChatGPT."
+
+[[evidence]]
+url = "https://github.com/openai/codex"
+checked_on = 2026-10-12
+claim = "OpenAI publishes Codex as a lightweight coding agent that runs in the terminal."

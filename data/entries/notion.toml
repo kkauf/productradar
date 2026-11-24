@@ -1,0 +1,10 @@
+name = "Notion"
+quadrant = "tools"
+maker = "Notion Labs"
+url = "https://www.notion.com"
+summary = "A workspace app for docs, wikis, databases and project boards."
+
+[[evidence]]
+url = "https://www.notion.com"
+checked_on = 2026-10-12
+claim = "Notion's official site."

@@ -1,0 +1,10 @@
+name = "Claude Code"
+quadrant = "tools"
+maker = "Anthropic"
+url = "https://claude.com/product/claude-code"
+summary = "Anthropic's coding agent that works in the terminal, the IDE and the desktop app."
+
+[[evidence]]
+url = "https://claude.com/product/claude-code"
+checked_on = 2026-10-12
+claim = "Anthropic's product page for Claude Code."

@@ -1,0 +1,8 @@
+name = "Give agents narrow keys"
+quadrant = "practices"
+summary = "Giving each agent the narrowest access key and spending limit that does the job. One mistake or breach then reaches little."
+
+[[evidence]]
+url = "https://blog.railway.com/p/security-disclosure-wednesday-october-21st"
+checked_on = 2026-10-22
+claim = "Railway published a security notice for Wednesday 21 October 2026. It reported unusual activity in the systems that store customers' saved settings and passwords."

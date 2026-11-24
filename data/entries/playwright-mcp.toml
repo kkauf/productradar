@@ -1,0 +1,10 @@
+name = "Playwright MCP"
+quadrant = "tools"
+maker = "Microsoft"
+url = "https://github.com/microsoft/playwright-mcp"
+summary = "A plug-in that lets agents control a web browser through MCP, a standard for connecting agents to tools."
+
+[[evidence]]
+url = "https://github.com/microsoft/playwright-mcp"
+checked_on = 2026-10-12
+claim = "Microsoft publishes Playwright MCP as an MCP server."

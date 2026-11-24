@@ -1,0 +1,15 @@
+name = "Railway"
+quadrant = "infra"
+maker = "Railway"
+url = "https://railway.com"
+summary = "A cloud platform for deploying web apps, servers and databases."
+
+[[evidence]]
+url = "https://railway.com"
+checked_on = 2026-10-12
+claim = "Railway describes itself as a full-stack cloud for web apps, servers and databases."
+
+[[evidence]]
+url = "https://blog.railway.com/p/security-disclosure-wednesday-october-21st"
+checked_on = 2026-10-22
+claim = "Railway's security notice of 21 October 2026 reports unusual activity in the systems that store customers' saved settings and passwords. It advises customers to replace their access keys and other secrets. It says all deployments are paused while it investigates."

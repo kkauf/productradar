@@ -1,0 +1,8 @@
+name = "Model tier per task"
+quadrant = "practices"
+summary = "Picking a model for each agent job."
+
+[[evidence]]
+url = "https://platform.claude.com/docs/en/models/overview"
+checked_on = 2026-10-12
+claim = "Anthropic's models overview lists the Claude model tiers."

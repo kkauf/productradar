@@ -1,0 +1,10 @@
+name = "Linear"
+quadrant = "tools"
+maker = "Linear"
+url = "https://linear.app"
+summary = "An issue tracker and product development tool for software teams."
+
+[[evidence]]
+url = "https://linear.app"
+checked_on = 2026-10-12
+claim = "Linear describes itself as the system for product development."

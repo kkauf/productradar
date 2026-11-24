@@ -1,0 +1,53 @@
+# Site-wide configuration. Quadrants and rings are shared by every radar.
+
+title = "Product Radar"
+tagline = "Tools and practices for building a business with AI agents, reviewed weekly"
+description = "Konstantin Kaufmann's weekly verdicts on the AI models, tools and practices he has used to build and run his products. Anyone can build their own radar and compare it with his."
+base_url = "https://productradar.org"
+main_radar = "product-radar"
+
+# Quadrant positions: top-left, top-right, bottom-left, bottom-right.
+[[quadrant]]
+id = "models"
+name = "Models & Agents"
+position = "top-left"
+description = "Foundation models and the agents built directly on them: coding, voice, image, reasoning."
+
+[[quadrant]]
+id = "tools"
+name = "Tools & Harnesses"
+position = "top-right"
+description = "Apps and CLIs you work through: agent harnesses, business tools, CRMs, knowledge bases."
+
+[[quadrant]]
+id = "infra"
+name = "Infrastructure"
+position = "bottom-left"
+description = "Where products run and what agents connect to: hosting, databases, payments, email, CI and local model runtimes."
+
+[[quadrant]]
+id = "practices"
+name = "Practices"
+position = "bottom-right"
+description = "Ways of working with agents: how to divide the work and how to check it."
+
+# Rings, innermost first.
+[[ring]]
+id = "adopt"
+name = "Adopt"
+description = "Proven in real use. A default choice."
+
+[[ring]]
+id = "trial"
+name = "Trial"
+description = "Worth using on real work where the risk is manageable."
+
+[[ring]]
+id = "assess"
+name = "Assess"
+description = "Tried or watched. Too early for a verdict."
+
+[[ring]]
+id = "hold"
+name = "Hold"
+description = "Avoid for new work."

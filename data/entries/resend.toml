@@ -1,0 +1,10 @@
+name = "Resend"
+quadrant = "infra"
+maker = "Resend"
+url = "https://resend.com"
+summary = "A service that sends your product's emails."
+
+[[evidence]]
+url = "https://resend.com"
+checked_on = 2026-10-12
+claim = "Resend describes itself as email for developers."

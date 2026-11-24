@@ -1,0 +1,10 @@
+name = "Computer use on macOS"
+label = "Computer use"
+quadrant = "models"
+url = "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool"
+summary = "Letting a model operate desktop apps through screenshots, mouse and keyboard."
+
+[[evidence]]
+url = "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool"
+checked_on = 2026-10-12
+claim = "Anthropic documents the computer use tool for Claude."

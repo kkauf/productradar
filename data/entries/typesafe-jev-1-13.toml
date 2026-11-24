@@ -1,0 +1,15 @@
+name = "TypeSafe Jev 1.13"
+quadrant = "models"
+maker = "TypeSafe AI"
+url = "https://docs.typesafe.ai/models"
+summary = "A small, cheap AI model from TypeSafe AI. It answers yes-or-no questions about a piece of text and says how sure it is."
+
+[[evidence]]
+url = "https://docs.typesafe.ai/models"
+checked_on = 2026-10-12
+claim = "TypeSafe lists Jev 1.13 (jev-1.13.0) as its current model. The jev-latest alias points to it."
+
+[[evidence]]
+url = "https://typesafe.ai"
+checked_on = 2026-10-12
+claim = "TypeSafe AI offers its first model, Jev, in early access."

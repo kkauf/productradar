@@ -1,0 +1,15 @@
+name = "Gemini 3.8 Flash"
+quadrant = "models"
+maker = "Google"
+url = "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash"
+summary = "Google's fast Gemini model for high-volume tasks."
+
+[[evidence]]
+url = "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash"
+checked_on = 2026-10-12
+claim = "Google's Gemini API docs list gemini-3.8-flash as the stable Gemini 3.8 Flash model, released in September 2026."
+
+[[evidence]]
+url = "https://deepmind.google/models/gemini/flash/"
+checked_on = 2026-10-12
+claim = "Google DeepMind's model page for Gemini 3.8 Flash."

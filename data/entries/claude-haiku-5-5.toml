@@ -1,0 +1,15 @@
+name = "Claude Haiku 5.5"
+quadrant = "models"
+maker = "Anthropic"
+url = "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+summary = "Anthropic's smallest and fastest Claude model."
+
+[[evidence]]
+url = "https://platform.claude.com/docs/en/about-claude/models/overview"
+checked_on = 2026-10-12
+claim = "Anthropic lists Claude Haiku 5.5 (claude-haiku-5-5) as its fastest current model, for high-volume, latency-sensitive tasks."
+
+[[evidence]]
+url = "https://www.anthropic.com/claude/haiku"
+checked_on = 2026-10-12
+claim = "Anthropic's product page for the Claude Haiku model family."

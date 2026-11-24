@@ -1,0 +1,10 @@
+name = "Stripe"
+quadrant = "infra"
+maker = "Stripe"
+url = "https://stripe.com"
+summary = "A payments platform. Stripe Connect handles payments and payouts for platforms and marketplaces."
+
+[[evidence]]
+url = "https://stripe.com/connect"
+checked_on = 2026-10-12
+claim = "Stripe Connect is Stripe's product for platform and marketplace payments."

@@ -1,0 +1,10 @@
+name = "Vercel"
+quadrant = "infra"
+maker = "Vercel"
+url = "https://vercel.com"
+summary = "A service that hosts and updates websites and web apps."
+
+[[evidence]]
+url = "https://vercel.com"
+checked_on = 2026-10-12
+claim = "Vercel's official site."

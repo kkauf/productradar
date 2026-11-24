@@ -1,0 +1,102 @@
+# Example community radar. Fictional; it shows how a personal radar file works.
+
+title = "Solo SaaS stack"
+owner = "Example builder"
+kind = "community"
+example = true
+description = "A fictional solo founder running a B2B SaaS product. Included to show how personal radars compare."
+
+[[edition]]
+date = 2026-09-21
+title = "My stack, week one"
+note = "What I actually use to run a one-person SaaS."
+
+[[blip]]
+entry = "claude-code"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "adopt"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "claude-sonnet-5-5"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "trial"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "vercel"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "adopt"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "supabase"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "adopt"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "stripe"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "adopt"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "resend"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "adopt"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "obsidian"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "hold"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "mcp"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "trial"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "untested-agent-code"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "hold"
+note = "Placed in the first edition."
+
+[[blip]]
+entry = "parallel-agents"
+status = "confirmed"
+rationale = "Example rationale for a fictional radar."
+[[blip.history]]
+date = 2026-09-21
+ring = "assess"
+note = "Placed in the first edition."

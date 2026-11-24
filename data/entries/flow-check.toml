@@ -1,0 +1,9 @@
+name = "Check every path through a user flow"
+label = "Check every path"
+quadrant = "practices"
+summary = "Drawing a user flow, such as a booking, as a chart of steps. A program then tries every order of steps, including retries and delays, to find where the user flow breaks."
+
+[[evidence]]
+url = "https://github.com/cursor/plugins/tree/main/pstack"
+checked_on = 2026-10-30
+claim = "pstack is a public set of agent skills by poteto. One skill draws a user flow as a chart and finds each step where the flow breaks."

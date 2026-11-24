@@ -1,0 +1,4 @@
+name = "Pick a direction before agents build creative work"
+label = "Pick a direction"
+quadrant = "practices"
+summary = "For creative work, agents first show several storyboards or directions. You pick one, then they build a rough version for fast feedback before any polish."

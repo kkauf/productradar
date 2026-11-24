@@ -1,0 +1,13 @@
+name = "Let agents reach you by push"
+quadrant = "practices"
+summary = "Agents bring questions and results to you, by text message, phone call or podcast, instead of leaving them in notes you must open."
+
+[[evidence]]
+url = "https://telegram.org/faq"
+checked_on = 2026-10-30
+claim = "Telegram's FAQ names Secret Chats as its end-to-end encrypted chats. Other chats use server-client encryption and are stored in the Telegram cloud."
+
+[[evidence]]
+url = "https://core.telegram.org/bots"
+checked_on = 2026-10-30
+claim = "Telegram's bot documentation says Telegram's intermediary server handles all encryption and communication with the Telegram API."

@@ -1,0 +1,10 @@
+name = "Obsidian"
+quadrant = "tools"
+maker = "Obsidian"
+url = "https://obsidian.md"
+summary = "A Markdown note-taking app that stores notes as local files."
+
+[[evidence]]
+url = "https://obsidian.md"
+checked_on = 2026-10-12
+claim = "Obsidian's official site."

@@ -1,0 +1,14 @@
+name = "T3 Code"
+quadrant = "tools"
+url = "https://t3.codes"
+summary = "An app for starting, watching and directing AI coding agents, on desktop, web and phone. Its source code is public."
+
+[[evidence]]
+url = "https://github.com/pingdotgg/t3code/releases/tag/v0.1.0"
+checked_on = 2026-10-22
+claim = "T3 Code published release v0.1.0 on 2026-10-15."
+
+[[evidence]]
+url = "https://t3.codes"
+checked_on = 2026-10-12
+claim = "The T3 Code site presents it as an open-source tool for running and managing coding agents."

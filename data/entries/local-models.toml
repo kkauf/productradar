@@ -1,0 +1,13 @@
+name = "Local models for agent work"
+quadrant = "infra"
+summary = "Running AI models on your own computer, instead of calling a cloud service."
+
+[[evidence]]
+url = "https://github.com/Generated-Computers/Locals"
+checked_on = 2026-10-22
+claim = "Locals is an open-source (MIT) program. It runs language models on Apple silicon Macs for agents. It claims up to 3x faster answers when many agents run at once."
+
+[[evidence]]
+url = "https://github.com/ml-explore/mlx"
+checked_on = 2026-10-22
+claim = "MLX is an array framework for Apple silicon."

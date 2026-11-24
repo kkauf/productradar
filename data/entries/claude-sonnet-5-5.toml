@@ -1,0 +1,15 @@
+name = "Claude Sonnet 5.5"
+quadrant = "models"
+maker = "Anthropic"
+url = "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+summary = "Anthropic's mid-size Claude model for everyday coding and agent work."
+
+[[evidence]]
+url = "https://platform.claude.com/docs/en/about-claude/models/overview"
+checked_on = 2026-10-12
+claim = "Anthropic lists Claude Sonnet 5.5 (claude-sonnet-5-5) as a current model with the best combination of speed and intelligence."
+
+[[evidence]]
+url = "https://www.anthropic.com/claude/sonnet"
+checked_on = 2026-10-12
+claim = "Anthropic's product page for the Claude Sonnet model family."

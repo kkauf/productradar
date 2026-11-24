@@ -1,0 +1,3 @@
+name = "Approve only the exceptions"
+quadrant = "practices"
+summary = "Agents ship on their own. Only a short written list of risky change types waits for your yes."

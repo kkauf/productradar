@@ -1,0 +1,10 @@
+name = "agent-browser"
+quadrant = "tools"
+maker = "Vercel Labs"
+url = "https://agent-browser.dev"
+summary = "A command-line tool that lets AI agents open, click and read web pages."
+
+[[evidence]]
+url = "https://github.com/vercel-labs/agent-browser"
+checked_on = 2026-10-12
+claim = "Vercel Labs publishes agent-browser as a browser automation CLI for AI agents."

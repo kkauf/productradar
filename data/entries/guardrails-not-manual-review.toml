@@ -1,0 +1,3 @@
+name = "Guardrails, not manual review"
+quadrant = "practices"
+summary = "You set the tests and limits once. Then agents ship without you checking each result."

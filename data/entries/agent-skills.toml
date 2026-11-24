@@ -1,0 +1,13 @@
+name = "Agent skills"
+quadrant = "practices"
+summary = "Packaged instructions and scripts that an agent loads when a task matches them."
+
+[[evidence]]
+url = "https://agentskills.io"
+checked_on = 2026-10-12
+claim = "Agent Skills overview page."
+
+[[evidence]]
+url = "https://code.claude.com/docs/en/skills"
+checked_on = 2026-10-12
+claim = "Claude Code documents how to extend Claude with skills."

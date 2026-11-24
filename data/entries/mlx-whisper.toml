@@ -1,0 +1,15 @@
+name = "MLX Whisper"
+quadrant = "infra"
+maker = "Apple (ml-explore)"
+url = "https://github.com/ml-explore/mlx-examples/tree/main/whisper"
+summary = "Speech-to-text that runs on your own Mac. It is a version of OpenAI's Whisper model, made for Apple's chips."
+
+[[evidence]]
+url = "https://github.com/ml-explore/mlx-examples/tree/main/whisper"
+checked_on = 2026-10-12
+claim = "The MLX examples repository includes a Whisper implementation."
+
+[[evidence]]
+url = "https://github.com/ml-explore/mlx"
+checked_on = 2026-10-12
+claim = "MLX is an array framework for Apple silicon."

@@ -1,0 +1,15 @@
+name = "Claude Opus 5.5"
+quadrant = "models"
+maker = "Anthropic"
+url = "https://platform.claude.com/docs/en/models/opus-5-5/overview"
+summary = "Anthropic's Claude model for long-running agentic coding and knowledge work."
+
+[[evidence]]
+url = "https://platform.claude.com/docs/en/about-claude/models/overview"
+checked_on = 2026-10-12
+claim = "Anthropic lists Claude Opus 5.5 (claude-opus-5-5) as a current model for long-running agentic coding and knowledge work."
+
+[[evidence]]
+url = "https://www.anthropic.com/claude/opus"
+checked_on = 2026-10-12
+claim = "Anthropic's product page for the Claude Opus model family."

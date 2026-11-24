@@ -1,0 +1,14 @@
+name = "Parallel agents in worktrees"
+label = "Parallel agents"
+quadrant = "practices"
+summary = "Running several coding agents at once, each in its own copy of the code."
+
+[[evidence]]
+url = "https://git-scm.com/docs/git-worktree"
+checked_on = 2026-10-12
+claim = "Git worktrees let one repository have several working trees checked out at once."
+
+[[evidence]]
+url = "https://code.claude.com/docs/en/sub-agents"
+checked_on = 2026-10-12
+claim = "Claude Code documents custom subagents with their own context."

@@ -1,0 +1,16 @@
+name = "Cloudflare Pages and Wrangler"
+label = "Cloudflare Pages"
+quadrant = "infra"
+maker = "Cloudflare"
+url = "https://pages.cloudflare.com"
+summary = "Cloudflare's service that hosts websites, updated from the command line with its Wrangler tool."
+
+[[evidence]]
+url = "https://www.cloudflare.com/products/pages/"
+checked_on = 2026-10-12
+claim = "Cloudflare's product page for Pages."
+
+[[evidence]]
+url = "https://developers.cloudflare.com/workers/wrangler/"
+checked_on = 2026-10-12
+claim = "Cloudflare documents Wrangler as the CLI for Workers and Pages."

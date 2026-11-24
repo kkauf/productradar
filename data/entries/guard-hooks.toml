@@ -1,0 +1,9 @@
+name = "Guard hooks for agents"
+label = "Guard hooks"
+quadrant = "practices"
+summary = "Small scripts that check risky agent actions before they run."
+
+[[evidence]]
+url = "https://code.claude.com/docs/en/hooks"
+checked_on = 2026-10-12
+claim = "Claude Code documents hooks that run on tool calls and other events."

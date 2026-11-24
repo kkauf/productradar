@@ -1,0 +1,9 @@
+name = "Mask personal data before a model sees it"
+label = "Mask personal data"
+quadrant = "practices"
+summary = "Replacing personal identifiers with placeholders before text reaches a language model."
+
+[[evidence]]
+url = "https://gdpr-info.eu/art-9-gdpr/"
+checked_on = 2026-10-12
+claim = "GDPR Article 9 treats health data as a special category of personal data."

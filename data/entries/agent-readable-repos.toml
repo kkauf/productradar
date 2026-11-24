@@ -1,0 +1,9 @@
+name = "AGENTS.md files"
+quadrant = "practices"
+url = "https://agents.md"
+summary = "A plain Markdown file that tells coding agents how to work in a repository."
+
+[[evidence]]
+url = "https://agents.md"
+checked_on = 2026-10-12
+claim = "The AGENTS.md site describes the format."

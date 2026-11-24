@@ -1,0 +1,851 @@
+# Konstantin's radar: the curated radar of the site. Opinions live here; facts live in data/entries/.
+# `title` is the name visitors see for this radar on every page, card and feed.
+# Every ring change is a [[blip.history]] item dated to an edition, with a note on why.
+title = "Konstantin's radar"
+owner = "Konstantin Kaufmann"
+kind = "curated"
+description = "Konstantin Kaufmann's verdicts on the models, tools, infrastructure and practices he has used to build and run his products."
+
+[[edition]]
+date = 2026-10-12
+title = "The starting radar"
+note = "The tools and practices from my own work, each in its ring."
+
+[[edition]]
+date = 2026-10-22
+title = "T3 Code and Haiku move in, Codex goes to Hold"
+note = "My daily work moved to Opus 5.5, Haiku 5.5 and T3 Code, and I dropped Codex. I also stopped my own review of agent work and now rely on automatic checks."
+body = """
+Anthropic's Claude models Opus, Sonnet and Haiku go from largest to smallest. Fable is Anthropic's model for hard, long tasks. Opus 5.5 now does almost all my work. Haiku 5.5 moves to Adopt. It does the small jobs, such as a quick check of each change my agents make. Fable 5.1 and Sonnet 5.5 move to Trial. I use them only for a few narrow jobs. Codex is OpenAI's coding agent, and GPT-6.1 Sol is its model. Both go to Hold. I cancelled my Codex plan on 5 October and last used it on 13 October. The models fell short for my work.
+
+T3 Code moves to Adopt. It is the app where I start and watch my agents. This radar calls such an app a harness. T3 Code now also starts my scheduled agent runs. MLX Whisper (speech-to-text on my Mac), Nano Banana 2.1 (images) and TypeSafe Jev 1.13 (a cheap yes-or-no checker for text) move to Adopt as my defaults. Computer use, where an agent clicks and types in Mac apps for me, comes back in Trial. One new Infrastructure entry, Local models for agent work, goes to Assess.
+
+I rewrote the practices for people who build products. They go from 12 to 8. The main change: I stopped my own review of agent work. Automatic checks now decide what ships, as Guardrails, not manual review explains. Mask personal data before a model sees it moves to Adopt. Four practices are new. Under [Not on the radar](https://productradar.org/about/#rejected), I list 9 tools that I left off, each with its reason."""
+
+[[edition]]
+date = 2026-10-30
+title = "A phone line to my agents, and Haiku takes over from Sonnet"
+note = "My agents now reach me by phone, with texts and podcasts next. Three new entries in Trial cover how. Haiku 5.5 took over Sonnet's jobs wherever a test showed it was good enough."
+body = """
+Three entries are new, all in Trial. ElevenLabs Agents runs the phone line I built to talk to my agents. Let agents reach you by push is the practice behind it. My agents now come to me. They no longer leave notes I must open. Pick a direction before agents build creative work comes from one project. I pick a direction first and see a rough version early.
+
+No ring changed this week, but the reasons for three models did. I now swap Sonnet 5.5 for Haiku 5.5 wherever a test allows it. Sonnet keeps web searches and one final check, where Haiku fell short. Opus 5.5 stays my default model, because I would rather wait for a better answer.
+
+I also measured Parallel against agent-browser for reading public pages, and Parallel stays my default. Eight other entries got clearer text after last week's reviews."""
+
+[[blip]]
+entry = "claude-fable-5-1"
+status = "confirmed"
+rationale = """
+Fable 5.1 was my main model in Edition 01. Fable is Anthropic's model for hard reasoning and long, multi-step tasks. Now Opus 5.5 does my daily work.
+
+Last week Fable gave under 2% of the answers in the agent sessions I run myself. Opus 5.5 gave the rest. My helper agents never use Fable. Helper agents are agents that my main agent starts for one part of a job.
+
+It stays in Trial because I still start a few sessions on it. If I stop using it, it moves to Hold. If you pick one Claude model for everyday work, start with Opus. Use Haiku for quick checks."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Main model in my daily sessions."
+[[blip.history]]
+date = 2026-10-22
+ring = "trial"
+note = "Few sessions now: Opus 5.5 took over the daily work."
+
+[[blip]]
+entry = "claude-opus-5-5"
+status = "confirmed"
+rationale = """
+Opus 5.5 is my default model. Opus, Sonnet and Haiku are Anthropic's Claude models, from largest to smallest. Last week it answered 36,217 requests in my own sessions and 25,357 from helper agents.
+
+It does the work that needs judgment. It plans a job, writes the code for a feature and decides which helper agent does which part. My scheduled agent runs also use it.
+
+Speed does not matter much to me. I would rather wait while Opus thinks than get a faster, weaker answer. That is why it sits in Adopt."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Default implementer in my agent builds."
+
+[[blip]]
+entry = "claude-sonnet-5-5"
+status = "confirmed"
+rationale = """
+I almost never talk to Sonnet 5.5 directly. Last week I sent it 1 request in my own sessions. My helper agents sent it 2,993.
+
+This week I tested where Haiku 5.5 can replace it, because Haiku costs much less. Sonnet kept two jobs. The first is web searches for my agents. Haiku gave thinner answers on all 3 test searches. The second is a final check of agent work before it reaches me. There Haiku agreed with Sonnet only 67% of the time. Two Sonnet runs agreed only 69% of the time, so that test is noisy.
+
+Sonnet stays in Trial for these two jobs. A test where Haiku matches it would move Sonnet to Hold."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Used daily for evidence, browser work and review."
+[[blip.history]]
+date = 2026-10-22
+ring = "trial"
+note = "Two narrow jobs now: long searches and release review."
+
+[[blip]]
+entry = "claude-haiku-5-5"
+status = "confirmed"
+rationale = """
+Haiku 5.5 is Anthropic's smallest and fastest Claude model. For well-defined jobs it gives me the best value. My helper agents use it for small, clear tasks. Helper agents are agents that my main agent starts for one part of a job.
+
+A Haiku agent clicks through each change as a user would, like a tester. It also clicks and types in Mac apps for my agents. This week helper agents sent it 14,224 requests.
+
+Haiku is not very smart, and that is fine for these jobs. The effort setting decides how long a model thinks. Even on high effort, Haiku costs less than Sonnet on low effort. So I now swap Sonnet for Haiku wherever a test shows Haiku is good enough. That use keeps it in Adopt."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use for small, narrow checks."
+[[blip.history]]
+date = 2026-10-22
+ring = "adopt"
+note = "Default for quick checks and for clicking through Mac apps."
+
+[[blip]]
+entry = "gpt-6-1-sol"
+status = "confirmed"
+rationale = """
+GPT-6.1 Sol is an OpenAI model. I used it through Codex, OpenAI's counterpart to Claude Code. In early October I gave it batches of agent tasks. I cancelled the Codex plan on 5 October. My access continued after that. On 7 and 8 October, Codex usage limits stopped my agent workers.
+
+For my work, in my words, "the models are no good right now". Its results were not good enough to keep a second Codex plan next to Claude. I have not used Sol since 13 October.
+
+An OpenAI model that beats Claude on my own tasks would move it back."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use for my Codex agent campaigns since October 2026."
+[[blip.history]]
+date = 2026-10-22
+ring = "hold"
+note = "Stopped: I cancelled my Codex plan in October."
+
+[[blip]]
+entry = "gemini-3-8-flash"
+status = "confirmed"
+rationale = """
+On isaiconsciousyet.com, Gemini 3.8 Flash picks the passages to quote from each source. It also drafts short labels for them. The site's update job runs twice a day.
+
+Code then checks that the exact quoted text is on the source page. So the model never writes a quote itself.
+
+It is cheap and fast enough for this volume."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use in one publishing pipeline."
+
+[[blip]]
+entry = "nano-banana-2-1"
+status = "confirmed"
+rationale = """
+Nano Banana 2.1 is the default model in my agents' image tool. I used it this month for an icon exploration. For one icon set it made 9 variants in about 30 seconds.
+
+It is my default for images, so it moves to Adopt."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use for occasional image work."
+[[blip.history]]
+date = 2026-10-22
+ring = "adopt"
+note = "My default image model."
+
+[[blip]]
+entry = "typesafe-jev-1-13"
+status = "confirmed"
+rationale = """
+Adopt for checking quotes. Trial for first-pass review of documents.
+
+Jev is a cheap yes-or-no checker for text. My site isaiconsciousyet.com quotes what named people say about whether AI is conscious. Twice a day, Jev checks each quote with yes-or-no questions. Code then acts on each answer.
+
+I also started a two-week test of Jev as a first review of documents I send to people outside my company. It flagged a document with a known flaw and passed the corrected one. That is one test pair. It took under half a second and cost under a cent. My usual reviewer agents cost 13 to 28 cents per review.
+
+Its notes on single sentences gave no reasons. So reviewer agents still do the detailed review. I will use it on text with personal data only once TypeSafe keeps none of the text it checks."""
+[[blip.history]]
+date = 2026-10-12
+ring = "assess"
+note = "Tried in one project."
+[[blip.history]]
+date = 2026-10-22
+ring = "adopt"
+note = "Checks quotes on my site twice a day. Now testing it as a cheap first reviewer."
+
+[[blip]]
+entry = "computer-use"
+status = "confirmed"
+rationale = """
+In Edition 01 I had dropped it. Anthropic's tool needs Mac permissions, and those never switched on for me.
+
+Since 19 October my agents work in Mac apps again. They built a small screen tool that takes screenshots, clicks and types. They also use the Mac's accessibility controls, the ones screen readers use to press buttons. So agents can work in apps that have no other way to be automated. For now they do small chores, such as deleting voice memos that are already transcribed.
+
+They work on my second display. So they never take my focus. Haiku 5.5 is enough for most of this clicking, and it is cheap.
+
+It sits in Trial because this setup is three days old."""
+[[blip.history]]
+date = 2026-10-12
+ring = "hold"
+note = "Dropped: macOS permission grants never took effect."
+[[blip.history]]
+date = 2026-10-22
+ring = "trial"
+note = "Back in use through my agents' own screen tool."
+
+[[blip]]
+entry = "elevenlabs-agents"
+status = "confirmed"
+rationale = """
+ElevenLabs Agents runs voice agents that answer the phone. It keeps a transcript of each call. During a call, the agent can use tools, such as asking another agent for an answer.
+
+This week I built a phone line to my agents with ElevenLabs. I call a number and talk to my main agent. On real calls the answers come back fast enough for a normal conversation.
+
+It sits in Trial because I have used it for a few days only. It is also the largest cost of my voice setup. A cheaper voice service with phone calls and tools would replace it."""
+[[blip.history]]
+date = 2026-10-30
+ring = "trial"
+note = "New: runs the phone line I built to talk to my agents."
+
+[[blip]]
+entry = "claude-code"
+status = "confirmed"
+rationale = """
+Claude Code is the agent under almost all my work. It handles my code, email, calendar and task board.
+
+Since 12 October I have not opened it in the terminal. T3 Code, my scripts and the desktop app run it for me. A harness is the app where you start and watch agents. In Edition 01 Claude Code was mine. Now T3 Code is.
+
+My skills live in Claude Code. Skills are saved instructions for recurring jobs. My limits on what agents may do and my helper agents live there too. So they work the same in every app."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "My daily agent harness."
+
+[[blip]]
+entry = "codex"
+status = "confirmed"
+rationale = """
+I ran Codex as a second agent next to Claude Code. In Edition 01 I called it my second harness: an app where I start and watch agents. Codex is OpenAI's coding agent. Both tools read the same rules file for my agents, AGENTS.md. So switching between them cost me little.
+
+I cancelled my Codex plan on 5 October. My access continued after that, and my last Codex session was on 13 October.
+
+The reason is the models. For my work, in my words, "the models are no good right now". On 7 and 8 October, Codex usage limits also stopped my agent workers. For my work, that was not worth a Codex plan next to Claude.
+
+An OpenAI model that beats Claude on my own tasks would move it back."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use as a second harness."
+[[blip.history]]
+date = 2026-10-22
+ring = "hold"
+note = "Plan cancelled in October. The models fell short for my work."
+
+[[blip]]
+entry = "t3-code"
+status = "confirmed"
+rationale = """
+T3 Code is the app where I start and watch my agents every day. This radar calls such an app a harness. It also starts my scheduled agent runs.
+
+Six scheduled agent runs each weekday work through my inbox and tasks. More runs start when I record a voice memo or write a note. A long-running agent forgets earlier work once its memory fills, so each run starts a fresh agent.
+
+Claude Code, the agent under my work, could not do this alone. macOS blocked a scheduled run of Claude Code from my iCloud files. Anthropic's cloud scheduler cannot reach files on my Mac.
+
+T3's phone app pings me when an agent needs me. It is Adopt because I run my agents in it every day. One gap remains: it cannot operate other Mac apps by itself."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In recent daily use, still alpha."
+[[blip.history]]
+date = 2026-10-22
+ring = "adopt"
+note = "Now starts my scheduled agent runs."
+
+[[blip]]
+entry = "obsidian"
+status = "confirmed"
+rationale = """
+My strategy, standing decisions, facts and task board live in one Obsidian vault. A vault is a folder of notes.
+
+When an agent needs my decision, it writes a card on that board. I answer the cards in one sitting.
+
+Agents read and edit the notes as plain text files on my Mac. They need no special connection and no export. I want more of my work in it."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Home of my company brain and task board."
+
+[[blip]]
+entry = "linear"
+status = "confirmed"
+rationale = """
+Kaufmann Health tickets live in Linear. A build agent picks up a ticket and ships it end to end.
+
+It still works well, so it stays in Adopt for now.
+
+Everything else I do lives in Obsidian, though. I lean towards moving tickets there too and dropping one tool.
+
+Linear keeps its place only if it gives agent builds a clear benefit. That benefit must be one a plain-text board cannot give."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Ticket source for my agent builds."
+
+[[blip]]
+entry = "agent-browser"
+status = "confirmed"
+rationale = """
+My agents use agent-browser for all scripted browser work. An agent opens pages, clicks and reads them for me.
+
+In my tests, a page costs an agent a few hundred tokens. Tokens are the units of text an AI model reads. The same page through Playwright cost more than 13,000.
+
+It is a plain command-line tool. It needs no extra server. Pages that need my logins run in a separate Chrome profile kept for agents."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Only browser tool since September 2026."
+
+[[blip]]
+entry = "fluidvoice"
+status = "confirmed"
+rationale = """
+I dictate most of my prompts with FluidVoice.
+
+It runs on my Mac, so my voice never leaves it. Speaking is faster than typing for long instructions to agents."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "My daily dictation tool."
+
+[[blip]]
+entry = "playwright-mcp"
+status = "confirmed"
+rationale = """
+I removed it in September 2026. MCP is a standard for connecting agents to tools. Playwright MCP uses it to let agents control a web browser.
+
+In my agents' hands it read whole pages as long text. A 10-step task used about 114,000 tokens. Tokens are the units of text an AI model reads. It also needed server setup for each agent. Its browser kept blocking my own Chrome.
+
+agent-browser does the same jobs for a few hundred tokens per page.
+
+This is my experience with agents on my Mac. It is not a verdict on Playwright for testing."""
+[[blip.history]]
+date = 2026-10-12
+ring = "hold"
+note = "Removed on 2026-09-27, replaced by agent-browser."
+
+[[blip]]
+entry = "notion"
+status = "confirmed"
+rationale = """
+I moved my docs and task board from Notion to Obsidian in April 2026.
+
+With Notion, my agents went through its API, a connection for programs. Now they read and edit plain files on my Mac. All my notes sit in one place, so agents look in one place.
+
+Notion is fine for teams. I am one person working with agents."""
+[[blip.history]]
+date = 2026-10-12
+ring = "hold"
+note = "Moved to Obsidian on 2026-04-20."
+
+[[blip]]
+entry = "metabase"
+status = "confirmed"
+rationale = """
+I liked my Metabase dashboards. I shut them down to save their hosting cost. They went off in June, and I deleted them in September 2026.
+
+The metric definitions now live in my docs as SQL queries. SQL is the standard language for asking a database a question.
+
+When I want a number, an agent runs the query and answers in the chat. A team that needs shared dashboards would bring it back."""
+[[blip.history]]
+date = 2026-10-12
+ring = "hold"
+note = "Retired on 2026-09-25."
+
+[[blip]]
+entry = "supabase"
+status = "confirmed"
+rationale = """
+Kaufmann Health keeps its database and its file storage on Supabase. Supabase is a hosted database service with storage and logins built in.
+
+Agents apply the database changes during each release. The release checks must pass first. It sits in Adopt because it carries a live product."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Production database for Kaufmann Health."
+
+[[blip]]
+entry = "vercel"
+status = "confirmed"
+rationale = """
+Kaufmann Health runs on Vercel. Vercel hosts the site and also runs its scheduled jobs, which start at set times.
+
+On 21 October another host had an outage. The Kaufmann Health release still shipped from Vercel the next day. It stays in Adopt as the default home for my main product."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Production hosting for two sites."
+
+[[blip]]
+entry = "stripe"
+status = "confirmed"
+rationale = """
+Kaufmann Health takes payments and pays out therapists through Stripe Connect. Connect is the Stripe product for platforms that pass money on to other people.
+
+Changes to money are on my short list of changes an agent must ask me about first. Stripe stays in Adopt because it handles the money side of a live product."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Production payments for Kaufmann Health."
+
+[[blip]]
+entry = "resend"
+status = "confirmed"
+rationale = """
+Kaufmann Health sends its product email through Resend. These are the emails the product sends on its own.
+
+This month I looked at Resend Inboxes. It lets agents receive and answer email. I left it off. At my volume it saves no time or money.
+
+Support mail can hold health data, so it stays in a separate inbox that hides those details. Resend stays in Adopt for sending."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Production email for Kaufmann Health."
+
+[[blip]]
+entry = "github-actions"
+status = "confirmed"
+rationale = """
+GitHub Actions runs automatic checks on all my active projects. The checks run each time a change goes into the code.
+
+For Kaufmann Health the checks include tests on a staging copy of the site and a daily security audit. This radar runs its checks there on every update too.
+
+It sits in Adopt because these checks catch mistakes before a change reaches users."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "CI for all my active repos."
+
+[[blip]]
+entry = "parallel-web"
+status = "confirmed"
+rationale = """
+Parallel is my agents' default tool for web search and for reading web pages. It is a service built for AI agents.
+
+This week I measured the cost of reading one public page. In my runs Parallel charged a tenth of a cent. agent-browser takes 1 to 1.5 GB of memory on my Mac. So my rule is now simple. Parallel reads public pages, and agent-browser handles only pages behind a login.
+
+One catch: Parallel often returns the page for another country, with other prices. My agents now check the country before they report a price.
+
+It stays in Adopt. Another service that wins on my own research tasks would move it."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Default research tool for my agents."
+
+[[blip]]
+entry = "cloudflare-pages"
+status = "confirmed"
+rationale = """
+My personal site and this radar run on Cloudflare Pages. Pages hosts websites that are plain files, with no server code behind them.
+
+Agents deploy a new version from the command line in seconds. Wrangler is the command-line tool they use for this.
+
+It stays in Trial because I use it for small sites like these only. My main product runs elsewhere."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use for smaller sites."
+
+[[blip]]
+entry = "mcp"
+status = "confirmed"
+rationale = """
+MCP is an open standard that lets an AI agent use another app directly. I connect a few apps this way: T3 Code, a video editor and Slack.
+
+For email, calendar and Drive my agents use skills instead. Skills are short written instructions plus small helper programs. The raw MCP tools failed too often for these jobs.
+
+This month I added a rule. Before an agent builds a new connection to an app, it checks the official Claude plugin marketplace first. It had about 315 plugins. MCP stays in Trial because I use it for a few apps only."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use for a few apps only."
+
+[[blip]]
+entry = "mlx-whisper"
+status = "confirmed"
+rationale = """
+MLX Whisper turns my speech into text on my Mac. Every voice memo I record goes through it.
+
+Each transcript has timestamps, so agents can find where in a memo I said something. Each new memo also starts an agent run that works on what I said.
+
+The audio never leaves my Mac, and it costs nothing per minute. It started in one project. Now it is part of my daily routine, so it moves to Adopt."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In real use in one film project."
+[[blip.history]]
+date = 2026-10-22
+ring = "adopt"
+note = "Transcribes every voice memo on my Mac."
+
+[[blip]]
+entry = "railway"
+status = "confirmed"
+rationale = """
+Railway hosts apps and servers. I use it, but not for my main product.
+
+On 21 October Railway paused builds and deploys. It published a security notice that advised customers to change their stored passwords and keys. My main product kept shipping from its other hosts.
+
+The Give agents narrow keys entry tells what my agents learned that day.
+
+Railway stays in Assess."""
+[[blip.history]]
+date = 2026-10-12
+ring = "assess"
+note = "Used for side services, no verdict yet."
+
+[[blip]]
+entry = "local-models"
+status = "confirmed"
+rationale = """
+Local models are AI models that you download and run on your own computer. Speech-to-text already runs this way on my Mac (see MLX Whisper). This week I tested local language models for agent work too.
+
+I tried two small ones on my Mac, which has 16 GB of memory. Both were no cheaper and no faster than cloud models when I sent one job at a time. The larger one filled the memory. The Mac then used its slower disk as extra memory.
+
+Locals, a new open-source program that runs local models on a Mac, claims up to three times faster answers when many agents run at once. I have not tested it on my Mac.
+
+For a one-person business this is not practical yet. By my own estimate, someone with $10,000 to $50,000 for hardware may still want it. The data stays on their own machine, and answers can come faster. I will test it again when the hardware or the models change."""
+[[blip.history]]
+date = 2026-10-22
+ring = "assess"
+note = "Tested this week: no gain on a 16 GB Mac yet."
+
+[[blip]]
+entry = "parallel-agents"
+status = "confirmed"
+rationale = """
+I still run several agents at once every day. Each agent works in its own copy of the code, so they do not overwrite each other.
+
+I removed the entry because it is no longer news, and to keep the practices short."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "How I build every ticket."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Still my daily practice, but no longer news."
+
+[[blip]]
+entry = "agent-skills"
+status = "confirmed"
+rationale = """
+Every job my agents repeat has a written skill. A skill holds the steps, scripts and rules for one job. The next agent then does that job right without asking me.
+
+Skills are common now. The lesson worth sharing is about skill packs: ready-made sets of skills from other people.
+
+This month two SEO skill packs went around on X. I installed neither. Agents compared the bigger pack with my own SEO plan. Half of its jobs were already in my plan. Eight went against it, like buying links from other sites.
+
+So I borrowed three methods into my own skill. An installed skill acts whenever its description matches the task. Then it can override your own plan."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Every repeated job has a skill."
+
+[[blip]]
+entry = "agent-readable-repos"
+status = "confirmed"
+rationale = """
+Each project has one rules file, AGENTS.md, that every agent reads first. It is now part of Company brain, to keep the practices short.
+
+I still keep one shared rules file plus one per project. Company brain tells how my agents use them."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "One rule set for all my agents."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Folded into Company brain to keep the practices short."
+
+[[blip]]
+entry = "guard-hooks"
+status = "confirmed"
+rationale = """
+Small scripts check risky agent actions before they run. They are now one of the checks in Guardrails, not manual review.
+
+They still check a message before it goes out and a private file before an agent reads it. Agents cannot turn them off."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Every session runs behind guard hooks."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Folded into Guardrails, not manual review."
+
+[[blip]]
+entry = "model-tiers"
+status = "confirmed"
+rationale = """
+I pick a model for each agent job. The Claude model entries now tell which model does what.
+
+Opus 5.5 does most of my work. Haiku 5.5 does the small checks. Sonnet 5.5 does long searches and release reviews."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Pinned on every agent by a hook."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Folded into the Claude model entries."
+
+[[blip]]
+entry = "company-brain"
+status = "confirmed"
+rationale = """
+My strategy, standing decisions, facts and steps for repeat jobs live in documents. My agents read them before they act.
+
+They ask me only what the documents do not answer. When data answers a question with high confidence, they act and report to me. Each project also has one rules file, AGENTS.md, that every agent reads first.
+
+This month I looked at a memory tool that pulls facts out of chats. An earlier version of my own setup worked that way. In about one of ten cases a stored fact helped. About 3 in 100 stored facts were wrong. For one person, plain search over my documents works better. I kept it."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "How my agents decide without me."
+
+[[blip]]
+entry = "ask-first-gate"
+status = "confirmed"
+rationale = """
+My agents ship their work on their own, from code to email. A short written list waits for my yes. It covers new steps or emails for customers, and anything with money. It also covers new personal data, rewrites of live data and new recurring costs.
+
+Since 21 October, bug fixes ship without asking. Before that, agents asked me about four bug fixes. I changed none of them.
+
+When an agent needs me, it writes one decision card. The card holds one question, the choices, the agent's recommendation and the facts with sources. The cards collect on one phone-sized sheet, so I decide in minutes."""
+[[blip.history]]
+date = 2026-10-12
+ring = "adopt"
+note = "Part of my definition of done."
+
+[[blip]]
+entry = "cross-model-review"
+status = "confirmed"
+rationale = """
+Before each release, a reviewer agent on a different Claude model checks the change. It is now one of the checks in Guardrails, not manual review.
+
+The reviewer is Sonnet 5.5. It starts fresh and has seen none of the earlier work."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "Recent, used on risky changes."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Folded into Guardrails, not manual review."
+
+[[blip]]
+entry = "compiler-feedback"
+status = "confirmed"
+rationale = """
+I chose programming languages whose own checks catch agent mistakes, such as Rust for this radar. The compiler, the program that turns the code into a working program, runs these checks.
+
+Mistakes get caught before they ship. Guardrails, not manual review explains how."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In use on this site and in typechecks."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Folded into Guardrails, not manual review."
+
+[[blip]]
+entry = "models-select-code-verifies"
+status = "confirmed"
+rationale = """
+A model picks a quote, and code checks that the exact text is on the source page. The Gemini 3.8 Flash entry now tells this.
+
+I still work this way on isaiconsciousyet.com. The model never writes a quote itself."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In use in one publishing pipeline."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Folded into the Gemini 3.8 Flash entry."
+
+[[blip]]
+entry = "privacy-masking"
+status = "confirmed"
+rationale = """
+Kaufmann Health is my company. It helps people find therapists, so its support mail can hold health data. Software masks that mail before any agent reads it. It replaces names, contact details and other identifiers with placeholders.
+
+Code enforces the masking, and agents cannot turn it off. Automated tests check it. It runs every time a scheduled agent run reads the support mail. That is why it sits in Adopt.
+
+My agents' browser tool also hides card numbers, passwords and access keys."""
+[[blip.history]]
+date = 2026-10-12
+ring = "trial"
+note = "In use since October 2026."
+[[blip.history]]
+date = 2026-10-22
+ring = "adopt"
+note = "Code enforces it whenever an agent reads support mail."
+
+[[blip]]
+entry = "untested-agent-code"
+status = "confirmed"
+rationale = """
+This Hold entry warned against shipping agent code without tests. I now state the rule in its positive form, in Guardrails, not manual review.
+
+The rule still holds. For each bug I report, an agent first writes a test that fails because of the bug. Then it fixes the code until the test passes."""
+[[blip.history]]
+date = 2026-10-12
+ring = "hold"
+note = "Avoid: tests gate every commit."
+[[blip.history]]
+date = 2026-10-22
+ring = "retired"
+note = "Restated as a positive rule in Guardrails, not manual review."
+
+[[blip]]
+entry = "scheduled-agent-runs"
+status = "confirmed"
+rationale = """
+Six times each weekday, a scheduled agent run works through my two inboxes and my task board. It also reads my answers to earlier questions. A voice memo or a note to myself starts an extra run.
+
+Each run fixes what it can with small helper agents. It checks each result in the live product or account. What needs me becomes one decision card: a short note with one question, the choices and the agent's recommendation.
+
+Last week there were 36 runs. A quiet run costs little because it only reads what changed. The Friday run closes the week. Since this edition, a separate Friday run writes this radar.
+
+It sits in Trial because this design is one week old."""
+[[blip.history]]
+date = 2026-10-22
+ring = "trial"
+note = "New: how my scheduled agent runs work since October."
+
+[[blip]]
+entry = "guardrails-not-manual-review"
+status = "confirmed"
+rationale = """
+I no longer read every result my agents produce. I set the guardrails once, and the agents ship inside them.
+
+Automatic tests run before anything goes live. Before each release, tests click through a test copy of the product. For each bug I report, an agent first writes a test that fails because of the bug. Then it fixes the code until the test passes. A Haiku agent clicks through each change as a user would.
+
+Software checks risky agent actions before they run, such as sending a message or reading a private file. Agents cannot turn that off. Before each release, a reviewer agent checks the change. It is Sonnet 5.5, a different Claude model that starts fresh.
+
+Five reviewer agents read each edition of this radar as a visitor would. It ships only when all of them pass it. It sits in Trial because I stopped my own review this week. A mistake that no check covers can still ship."""
+[[blip.history]]
+date = 2026-10-22
+ring = "trial"
+note = "New: replaces four narrower entries."
+
+[[blip]]
+entry = "least-privilege-keys"
+status = "confirmed"
+rationale = """
+A key is a password-like code that lets software act inside an account. Before an agent takes a key, I have it weigh the damage that key could do against what it gains. It takes the narrowest key that does the job.
+
+On 21 October an agent needed a key for a hosting account. It chose a key limited to a single project over a key for the whole account. That same day the hosting company, Railway, published a security notice. A narrow key limits the damage when a provider has a problem.
+
+The same rule holds for money. My agents can spend only within a small limit that I set, and only after I approve the use."""
+[[blip.history]]
+date = 2026-10-22
+ring = "trial"
+note = "New: the lesson from a host's security notice."
+
+[[blip]]
+entry = "flow-check"
+status = "confirmed"
+rationale = """
+pstack is a free set of ready-made instructions for coding agents, called skills. A developer who posts as poteto on X shared it. One skill finds bugs in a user flow. I tried it in October.
+
+An agent draws the user flow as a plain-language chart. It shows each situation a user can be in and the events that move them on. A small program then tries every order of events, including retries and events at the same time.
+
+My first chart was of a user flow that sends messages. The program found 6 flaws in its design. Then my agents checked four user flows at Kaufmann Health, my therapist-matching company. The program found 16 bugs a user could hit. The fixes shipped in the next release.
+
+I can read the chart without the code. So bugs show up before users hit them."""
+[[blip.history]]
+date = 2026-10-22
+ring = "trial"
+note = "New this week: found 16 bugs in four flows."
+
+[[blip]]
+entry = "agent-push-channel"
+status = "confirmed"
+rationale = """
+My agents used to leave their questions in notes and documents. I had to open them myself. The notes were a pull from me. So now the agents come to me.
+
+This week I set up a phone line, so I can call them. I decided that texts on Signal, a private messenger, and audio briefings in my podcast app come next. Then I can listen in the car.
+
+I ruled out Telegram for this. Its chats with bots are not end-to-end encrypted, so Telegram's servers can read them.
+
+It sits in Trial because I set it up this week. It moves to Adopt when it has worked for a few weeks."""
+[[blip.history]]
+date = 2026-10-30
+ring = "trial"
+note = "New: my agents come to me by phone, with texts and podcasts next."
+
+[[blip]]
+entry = "approve-directions-first"
+status = "confirmed"
+rationale = """
+For creative work, my agents first show me several storyboards and directions. I pick one. Only then do they build it.
+
+They also show me a rough version early and ask for my feedback. They do not polish it first. Polishing the wrong direction wastes work.
+
+I have used this on one project so far. That is why it sits in Trial. It moves to Adopt when it holds up on more projects."""
+[[blip.history]]
+date = 2026-10-30
+ring = "trial"
+note = "New: I pick a direction before agents build, so far on one project."
+
+[[rejected]]
+name = "TencentDB Agent Memory"
+url = "https://github.com/TencentCloud/TencentDB-Agent-Memory"
+date = 2026-10-22
+reason = "It builds memory by pulling facts out of chats. My own test of that idea found plain document search more reliable for one person."
+
+[[rejected]]
+name = "Claude Duet"
+url = "https://claude.com/product/claude-duet"
+date = 2026-10-22
+reason = "Anthropic's new app where Claude works as a proactive agent. It keeps working while you are away and asks before it acts for you. It is a research preview with a waitlist. In my words: \"I think what we're doing is more powerful and fits me better.\" My own setup is my scheduled agent runs."
+
+[[rejected]]
+name = "Agent Beacon"
+url = "https://github.com/Asymptote-Labs/agent-beacon"
+date = 2026-10-22
+reason = "It records coding-agent sessions and turns them into lessons for later agents. My agents already write each lesson into the skill that owns it, so it adds little for me."
+
+[[rejected]]
+name = "Who by Desert Ant Labs"
+url = "https://x.com/desertantlabs/status/2112922104127439095"
+date = 2026-10-22
+reason = "It tells apart who speaks in a recording. On my outdoor phone recording, it got 11 to 13 of 16 lines right. That is not reliable enough for the few recordings I make."
+
+[[rejected]]
+name = "Sunra MCP"
+url = "https://x.com/sunra_ai/status/2112212015045296395"
+date = 2026-10-22
+reason = "It lets agents use image, video and audio AI tools through one plug-in connection (MCP). I keep it in mind for when I make video spots."
+
+[[rejected]]
+name = "Fish Audio Drama 3"
+url = "https://huggingface.co/fishaudio/drama-3"
+date = 2026-10-22
+reason = "This voice model is free to download, but it needs about 70 GB of memory. My Mac has 16 GB."
+
+[[rejected]]
+name = "Resend Inboxes"
+url = "https://resend.com/products/inboxes"
+date = 2026-10-22
+reason = "It gives agents shared inboxes to receive and answer email. At my volume it saves me no time or money."
+
+[[rejected]]
+name = "Locals"
+url = "https://github.com/Generated-Computers/Locals"
+date = 2026-10-22
+reason = "This program runs local models on a Mac. It claims up to three times faster answers when many agents run at once. I have not tested it on my Mac."
+
+[[rejected]]
+name = "Perplexity Pro"
+date = 2026-10-22
+reason = "I had not opened it in 60 days. My agents now do my research through Parallel."

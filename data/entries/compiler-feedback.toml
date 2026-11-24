@@ -1,0 +1,9 @@
+name = "Compiler feedback for agents"
+label = "Compiler feedback"
+quadrant = "practices"
+summary = "Choosing programming languages whose checks catch agent mistakes before a person reviews the work."
+
+[[evidence]]
+url = "https://rust-lang.org"
+checked_on = 2026-10-12
+claim = "Rust's official site."

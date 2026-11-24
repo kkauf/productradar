@@ -1,0 +1,10 @@
+name = "ElevenLabs Agents"
+quadrant = "models"
+maker = "ElevenLabs"
+url = "https://elevenlabs.io/docs/agents-platform/overview"
+summary = "A service for voice agents that talk with people on the phone or on the web, and can use tools during the call."
+
+[[evidence]]
+url = "https://elevenlabs.io/docs/agents-platform/overview"
+checked_on = 2026-10-30
+claim = "ElevenLabs documents its agents platform (ElevenAgents): voice agents for telephony, web and mobile, with phone calls through Twilio or SIP, tools that call APIs, and a conversation history with analytics."

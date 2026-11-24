@@ -1,0 +1,9 @@
+name = "FluidVoice"
+quadrant = "tools"
+url = "https://fluidvoice.com"
+summary = "An open-source macOS dictation app with on-device speech recognition."
+
+[[evidence]]
+url = "https://github.com/altic-dev/FluidVoice"
+checked_on = 2026-10-12
+claim = "The FluidVoice repository describes a macOS dictation app with on-device speech-to-text."

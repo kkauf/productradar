@@ -1,0 +1,10 @@
+name = "MCP (Model Context Protocol)"
+label = "MCP"
+quadrant = "infra"
+url = "https://modelcontextprotocol.io"
+summary = "An open protocol for connecting AI applications to tools and data sources."
+
+[[evidence]]
+url = "https://modelcontextprotocol.io"
+checked_on = 2026-10-12
+claim = "The official MCP site explains what the Model Context Protocol is."

@@ -1,0 +1,15 @@
+name = "Nano Banana 2.1"
+quadrant = "models"
+maker = "Google"
+url = "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1"
+summary = "Google's Gemini image model for making and editing images. It is faster and cheaper than Nano Banana Pro, Google's larger image model."
+
+[[evidence]]
+url = "https://deepmind.google/models/gemini-image/pro/"
+checked_on = 2026-10-12
+claim = "Google DeepMind's model page for Nano Banana Pro."
+
+[[evidence]]
+url = "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1"
+checked_on = 2026-10-12
+claim = "Google's Gemini API docs list gemini-nano-banana-2.1 as a stable model. They call it the more efficient counterpart to Gemini 3 Pro Image (Nano Banana Pro)."
