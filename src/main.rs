@@ -11,6 +11,9 @@
 //!
 //! Options: --data DIR, --out DIR, --links dirs|files, --base-url URL, --no-og, --title T
 
+// Index loops read better here than enumerate chains (clippy 1.100 flags them).
+#![allow(clippy::needless_range_loop)]
+
 mod date;
 mod feeds;
 mod focus;
